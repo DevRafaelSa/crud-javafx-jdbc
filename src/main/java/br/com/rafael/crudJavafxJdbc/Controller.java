@@ -1,4 +1,4 @@
-package com.example.crudjavafxjdbc;
+package br.com.rafael.crudJavafxJdbc;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
