@@ -3,6 +3,6 @@ module com.example.crudjavafxjdbc {
     requires javafx.fxml;
 
 
-    opens br.com.rafael.crudJavafxJdbc to javafx.fxml;
-    exports br.com.rafael.crudJavafxJdbc;
+    opens br.com.rafael.Program to javafx.fxml;
+    exports br.com.rafael.Program;
 }

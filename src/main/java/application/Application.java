@@ -1,4 +1,4 @@
-package br.com.rafael.crudJavafxJdbc;
+package application;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
