@@ -1,8 +1,9 @@
-module com.example.crudjavafxjdbc {
+module crudjavafxjdbc {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
-    opens br.com.rafael.Program to javafx.fxml;
-    exports br.com.rafael.Program;
+    opens application to javafx.fxml;
+    exports application;
 }

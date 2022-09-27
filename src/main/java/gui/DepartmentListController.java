@@ -1,8 +1,9 @@
 package gui;
 
 
-import application.Application;
+import application.Main;
 import db.DbIntegrityException;
+import gui.listeners.DataChangeListener;
 import gui.util.Alerts;
 import gui.util.Utils;
 import javafx.beans.property.ReadOnlyObjectWrapper;
@@ -76,7 +77,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
         tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
         tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 
-        Stage stage = (Stage) Application.getMainScene().getWindow();
+        Stage stage = (Stage) Main.getMainScene().getWindow();
         tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
     }
 
