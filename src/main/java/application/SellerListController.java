@@ -8,7 +8,6 @@ import java.util.Optional;
 import java.util.ResourceBundle;
 
 import application.Main;
-import application.SellerFormController;
 import db.DbIntegrityException;
 import gui.listeners.DataChangeListener;
 import gui.util.Alerts;
@@ -152,7 +151,7 @@ public class SellerListController implements Initializable, DataChangeListener {
                 }
                 setGraphic(button);
                 button.setOnAction(
-                        event -> createDialogForm(obj, "/gui/SellerForm.fxml", Utils.currentStage(event)));
+                        event -> createDialogForm(obj, "/application/SellerForm.fxml", Utils.currentStage(event)));
             }
         });
     }

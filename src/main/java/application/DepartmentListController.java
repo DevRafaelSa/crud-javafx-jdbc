@@ -1,7 +1,11 @@
 package application;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+import java.util.Optional;
+import java.util.ResourceBundle;
 
-import application.DepartmentFormController;
 import application.Main;
 import db.DbIntegrityException;
 import gui.listeners.DataChangeListener;
@@ -27,12 +31,6 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.entities.Department;
 import model.services.DepartmentService;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.List;
-import java.util.Optional;
-import java.util.ResourceBundle;
 
 public class DepartmentListController implements Initializable, DataChangeListener {
 
@@ -136,7 +134,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
                 }
                 setGraphic(button);
                 button.setOnAction(
-                        event -> createDialogForm(obj, "/gui/DepartmentForm.fxml", Utils.currentStage(event)));
+                        event -> createDialogForm(obj, "/application/DepartmentForm.fxml", Utils.currentStage(event)));
             }
         });
     }
